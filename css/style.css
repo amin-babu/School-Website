@@ -178,7 +178,7 @@ header{
 
 .categories{
   background: var(--color-bg1);
-  height: 29rem;
+  height: 32rem;
 }
 
 .categories h1{
@@ -363,7 +363,51 @@ header{
   width: 3rem;
   height: 3rem;
   position: absolute;
-  left: 48%;
+  left: 46%;
   top: -1.5rem;
   transform: rotate(45deg);
+}
+
+/*=========================FOOTER SECTION======================*/
+
+footer{
+  background: var(--color-bg1);
+  padding: 5rem;
+  font-size: 0.9rem;
+}
+
+.footer-container{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 5rem;
+}
+
+.footer-container > div h4{
+  margin-bottom: 1.2rem;
+}
+
+.footer-1 p{
+  margin: 0 0 2rem;
+}
+
+footer ul li{
+  margin-bottom: 0.7rem;
+}
+
+footer ul li a:hover{
+  text-decoration: underline;
+}
+
+.footer-social{
+  display: flex;
+  gap: 1rem;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.footer-copyright{
+  text-align: center;
+  margin-top: 4rem;
+  padding: 1.2rem 0;
+  border-top: 1px solid var(--color-bg2);
 }
