@@ -13,6 +13,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+  <!-- SWIPER JS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 </head>
@@ -296,6 +299,126 @@
   </section>
   <!-- ====================FAQ'S SECTION ENDS HERE=================== -->
 
+
+
+
+
+  <!-- ===================TESTIMONIAL SECTION STARTS HERE======================= -->
+
+  <section class="container testimonials-container mySwiper">
+    <h2>Student's Testimonials</h2>
+    <div class="swiper-wrapper">
+      <article class="testimonial swiper-slide">
+        <div class="avatar">
+          <img src="images/avatar1.jpg" alt="">
+        </div>
+
+        <div class="testimonial-info">
+          <h5>Diana Ayi</h5>
+          <small>Student</small>
+        </div>
+
+        <div class="testimonial-body">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta suscipit velit inventore officiis mollitia iusto, provident fuga praesentium vitae enim quia pariatur, dolor expedita tempore molestiae, explicabo qui consequuntur id.
+          </p>
+        </div>
+      </article>
+
+      
+      <article class="testimonial swiper-slide">
+        <div class="avatar">
+          <img src="images/avatar2.jpg" alt="">
+        </div>
+
+        <div class="testimonial-info">
+          <h5>Diana Ayi</h5>
+          <small>Student</small>
+        </div>
+
+        <div class="testimonial-body">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta suscipit velit inventore officiis mollitia iusto, provident fuga praesentium vitae enim quia pariatur, dolor expedita tempore molestiae, explicabo qui consequuntur id.
+          </p>
+        </div>
+      </article>
+
+      <article class="testimonial swiper-slide">
+        <div class="avatar">
+          <img src="images/avatar3.jpg" alt="">
+        </div>
+
+        <div class="testimonial-info">
+          <h5>Diana Ayi</h5>
+          <small>Student</small>
+        </div>
+
+        <div class="testimonial-body">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta suscipit velit inventore officiis mollitia iusto, provident fuga praesentium vitae enim quia pariatur, dolor expedita tempore molestiae, explicabo qui consequuntur id.
+          </p>
+        </div>
+      </article>
+
+      <article class="testimonial swiper-slide">
+        <div class="avatar">
+          <img src="images/avatar4.jpg" alt="">
+        </div>
+
+        <div class="testimonial-info">
+          <h5>Diana Ayi</h5>
+          <small>Student</small>
+        </div>
+
+        <div class="testimonial-body">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta suscipit velit inventore officiis mollitia iusto, provident fuga praesentium vitae enim quia pariatur, dolor expedita tempore molestiae, explicabo qui consequuntur id.
+          </p>
+        </div>
+      </article>
+
+      <article class="testimonial swiper-slide">
+        <div class="avatar">
+          <img src="images/avatar5.jpg" alt="">
+        </div>
+
+        <div class="testimonial-info">
+          <h5>Diana Ayi</h5>
+          <small>Student</small>
+        </div>
+
+        <div class="testimonial-body">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta suscipit velit inventore officiis mollitia iusto, provident fuga praesentium vitae enim quia pariatur, dolor expedita tempore molestiae, explicabo qui consequuntur id.
+          </p>
+        </div>
+      </article>
+    </div>    
+    <div class="swiper-pagination"></div>
+  </section>
+
+  <!-- ===================TESTIMONIAL SECTION ENDS HERE======================= -->
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="main.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      //when windows width >= 600px
+      breakpoints: {
+        600: {
+          slidesPerView: 2
+        }
+      }
+    });
+  </script>
 </body>
 </html>

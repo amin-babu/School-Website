@@ -130,7 +130,7 @@ nav{
 }
 
 #logo:hover{
-  color: var(--color-danger);
+  color: var(--color-bg1);
 }
 
 nav button{
@@ -149,7 +149,7 @@ nav button{
 }
 
 .nav-menu a:hover{
-  color: var(--color-danger);
+  color: var(--color-bg1);
 }
 
 /* =======================HEADER======================= */
@@ -296,7 +296,7 @@ header{
 }
 
 .faq{
-  padding: 2rem;
+  padding: 1.5rem;
   display: flex;
   align-items: center;
   gap: 1.4rem;
@@ -322,4 +322,48 @@ header{
 
 .faq.open p{
   display: block;
+}
+
+/*=========================TESTIMONIAL SECTION======================*/
+
+.testimonials-container{
+  overflow-x: hidden;
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.testimonial{
+  padding-top: 2rem;
+}
+
+.avatar{
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1rem;
+  border: 1rem solid var(--color-bg1);
+}
+
+.testimonial-info{
+  text-align: center;
+}
+
+.testimonial-body{
+  background: var(--color-primary);
+  padding: 2rem;
+  margin-top: 3rem;
+  position: relative;
+}
+
+.testimonial-body::before{
+  content: '';
+  display: block;
+  background: linear-gradient(135deg , transparent, var(--color-primary) , var(--color-primary) , var(--color-primary));
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 48%;
+  top: -1.5rem;
+  transform: rotate(45deg);
 }
